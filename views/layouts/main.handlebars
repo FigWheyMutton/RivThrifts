@@ -9,7 +9,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <header>
+  <div class="header">
+    <h1>RivThrifts</h1>
+    <p>College Students with a Dream</p>
+  </div>
+  </header>
+  <div class="navbar pure-menu pure-menu-horizontal pure-menu-scrollable">
+    <div>
+      <div class="navbar-left">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a href="/profile" class="pure-menu-link">View Our $5 Collection</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/profile" class="pure-menu-link">View Our $10 Collection</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/profile" class="pure-menu-link">View Our $15 Collection</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/profile" class="pure-menu-link">View Our $20 Collection</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/profile" class="pure-menu-link">View Our $25+ Collection</a>
+        </li>
+      </div>
+    <div class="navbar-right">
+      <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a href="/" class="pure-menu-link">Home</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="/profile" class="pure-menu-link">Profile</a>
+      </li>
+      </ul>
+      
 
+{{#if loggedIn}}
+        <a href="#" class="pure-menu-link pure-menu-heading" id="logout">Logout</a>
+{{else}}
+      <a href="/login" class="pure-menu-link pure-menu-heading">Login</a>
+{{/if}}
+    </div>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="container1">
+    <div class="side">
+    <h1>Quick Search</h1>
+    <div class="side-img">
+    <h3>View Our $5 Collection</h3>
+    </div>
+    <div class="side-img">
+    <h3>View Our $10 Collection</h3>
+    </div>
+    <div class="side-img">
+    <h3>View Our $15 Collection</h3>
+    </div>
+    <div class="side-img">
+    <h3>View Our $20 Collection</h3>
+    </div>
+    <div class="side-img">
+    <h3>View Our $25+ Collection</h3>
+    </div>
+
+    </div>
+  </div>
+<div class="content">
+  <div class="container2">
+
+    <div class="col-12">
+
+      <div class="container-title">
+
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-warning" id="header-newsfeed">Recently Posted Clothing:</h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
  
 
   {{{body}}}

@@ -9,9 +9,10 @@ console.log(username, email, password)
   if (username && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ username, email, password, bio }),
+      body: JSON.stringify({ username, email, password}),
       headers: { 'Content-Type': 'application/json' },
     });
+ 
     if (response.ok) {
       document.location.replace('/');
     } else {
