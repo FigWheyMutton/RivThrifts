@@ -66,10 +66,15 @@ router.get('/login', (req, res) => {
 
 });
 
-router.get('/signup', (req,res) => {
-  res.render('signup')
+
+// rendering sign up page 
+router.get('/signup', (req, res) => {
+  res.render('signup');
 });
 
+router.get('$5collection', (req, res) => {
+  
+})
 
 
 module.exports = router; 
