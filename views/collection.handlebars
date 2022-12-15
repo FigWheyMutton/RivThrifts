@@ -1,4 +1,4 @@
-<div class="content">
+{{!-- <div class="content">
   <div class="container2">
 
     <div class="col-12">
@@ -7,27 +7,14 @@
 
         <div class="row">
           <div class="col-12">
-            <h2 class="text-warning" id="header-newsfeed">Recently Posted Clothing:</h2>
+            <h2 class="text-warning" id="header-newsfeed">Our $5 Collection</h2>
           </div>
 
         </div>
       </div>
     </div>
- 
 
-
-    {{#if loggedIn}}
-    <form class="new-post-form">
-      <input type="text" class="form-control form-control2 bg-dark text-white" id="post-input" name="post-text"
-        placeholder="What's on your mind?" />
-      <button type="submit" class="btn btn-warning" id="btn-post">Post</button>
-    </form>
-    {{/if}}
-
-
-
-
-    {{#each posts as |post|}}
+{{#each posts as |post|}}
     <div class="main">
       <h2 class="postinfo">{{user.username}}</h2>
       <p class="post_text">{{post.post_text}}{{comment.comment_text}}</p>
@@ -55,7 +42,5 @@
     {{/each}}
 
 {{#if loggedIn}}
-<script src="/js/addPost.js"></script>
-<script src="/js/comment.js"></script>
-
-{{/if}}
+<script src="/js/collection.js"></script>
+{{/if}} --}}
