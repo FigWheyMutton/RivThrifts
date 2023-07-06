@@ -1,72 +1,63 @@
-# BurnWhisper
+# Frogge Inc. ![frogge](./client/public/images/logo-dark-green-background.png)
 
-## Description
+## Welcome to the Frogge merch website!
+Website deployed on [HEROKU!](https://frogge-e-commerce.herokuapp.com/)
 
-The application will allow users to participate in active discourse with their fellow collegues about their universities. For example, one user can make a post commenting about how the food at the HUB had roaches, and then other users will be able to make comments as well as upvoting the post. With this in mind, there will be three pages in use: the home page, the login/sign-up page, and the user profile page. 
+This website was built using React, Node.js, and Express. The application will allows users to scroll through a list of merchandise and add items to their cart. They can then open up their cart to see the subtotal of the products added, and then proceed to checkout, powered by Stripe, to finalize their order. There are a total of 5 pages: Home, Cart, Contact, Checkout, and a landing page. 
 
-## Table of Contents (Optional)
+### User Story
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [User-Story](#user-story)
-- [Acceptance-Criteria](#acceptance-criteria)
-- [Installation](#installation)
-- [Mock-Up](#mock-up)
-- [Tentative-Entity-Relationship-Diagram](#tentative-entity-relationship-diagram)
-- [Usage](#usage)
-- [Technologies](#technologies)
-- [Credits](#credits)
-
-## User Story
-```md
-AS A user
-I WANT to be able to have discourse with my colleagues about my university or school
-SO THAT I can express my thoughts and opinions
+```
+AS a user, 
+I WANT to be able to easily browse and search for products on an e-commerce website, 
+SO THAT I can find the items that I am interested in purchasing. 
 ```
 
-## Acceptance Criteria
-```md
-GIVEN the homepage of BurnWhisper
-WHEN I am not logged in
-THEN I cannot interact with any post OR comment
-WHEN I am not logged in
-THEN I can click on the LOGIN button to login
-WHEN I do not have an account
-THEN I can click sign up to make an account
-WHEN I am logged in
-THEN I can create, add, and update posts and comments
-WHEN I am logged in
-THEN I can view my profile and view all of my previous posts
-WHEN I am logged in
-THEN I can click on school insignias to view their posts
-WHEN I want to sign out
-THEN I can click LOGOUT to sign out
+### Acceptance Criteria
+
+```
+GIVEN a user is on the home page, 
+WHEN the user clicks on a product, 
+THEN the user is taken to the product page.
+GIVEN a user is on the product page, 
+WHEN the user clicks on the add to cart button, 
+THEN the product is added to the cart.
+GIVEN a user is on the cart page, 
+WHEN the user clicks on the checkout button, 
+THEN the user is taken to the checkout page.
 ```
 
-## Installation
-If copying repo, make sure to `git clone` the repo, and then type `npm i` in the terminal to install dependencies
+### Home Page Sketch (More found in the images folder)
+![home](./client/public/images/home.png)
 
-## Mock-Up
-<img src = "./assets/mockup.png" >
+### Single Product Page Sketch (More found in the images folder)
+![singleProduct](./client/public/images/singleProduct.png)
 
-## Tentative Entity Relationship Diagram
-<img src = "./assets/Screenshot_16.png">
+### Technologies used
+- React for building the user interface and handling client-side logic.
+- Node.js for running JavaScript on the server-side.
+- Express for routing and handling server-side logic.
+- Stripe for handling payments.
+- MongoDB for storing data.
+- Mongoose for modeling data.
+- Heroku for deployment.
 
-## Usage
-The application allows a user to create a profile and then update the forum with their own posts and comments. The website is geared towards individuals still in school specifiaclly colleges, and is a space for them to spill their thoughts on the school they are attending. 
+### Features
+- Browse and purchase merchandise.
+- Add items to cart and view cart.
+- Send a complaint form to the admin.
+- Checkout with Stripe.
 
-## Technologies
-- bcrypt
-- connect-session-sequelize
-- cookie-parser
-- dotenv
-- express
-- express-flash
-- express-handlebars
-- express-session
-- mysql2
-- sequelize
-- (*NEW*) bootflat (*NEW*)
+### Deployment
 
-## Credits
-Worked on in collaboration with ALEX HSIEH, ORAAN LEVI, and NICHOLAS LE
+This website is deployed to Heroku through the following link [here!](https://frogge-merch.herokuapp.com/)
+
+### Team Members
+
+- Cory: In charge of front-end development and styling.
+- Alex: In charge of front-end development and styling.
+- Nick: In charge of back-end development and database management.
+
+### Support
+
+If you have any issues or questions, please don't hesitate to contact us.

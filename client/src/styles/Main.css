@@ -1,0 +1,32 @@
+/* h1 {
+  padding: 20px;
+  margin-left: 12px;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+} */
+
+.mainText {
+  margin-left: 32px;
+  margin-right: 32px;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+h5, h2 {
+  font-family: Helvetica, arial, sans-serif;
+}
+
+#fields {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.color-nav {
+  /* background-color: #f0fcec; */
+  background-color: #d3e7cf;
+ 
+}
+
+.company-name {
+  color: #444941;
+  font-size: 19px;
+}
